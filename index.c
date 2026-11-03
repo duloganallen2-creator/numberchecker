@@ -1,8 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 int main (){
     // check if the number is odd or even
 
     int number;
+    char choice [10];
+    do{
+        printf("ENTER ANY NUMBER: ");
+        scanf("%d" ,&number);
+
+         int number;
     printf("ENTER ANY NUMBER: ");
     scanf("%d", &number);
 
@@ -11,6 +18,19 @@ int main (){
     }else{
         printf("%d IS ODD NUMBER!" , number);
     }
+
+    printf("\nDO YOU WANT TO CHECK YOUR NUMBER? (YES/NO:)");
+    scanf("%s", &choice);
+
+    }while(strcmp(choice, "YES")== 0);
+    printf("THANK YOU FOR USING THIS PROGRAM");
+    
+
+
+    
+    
+   
+    
 
 
 
